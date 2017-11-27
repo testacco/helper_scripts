@@ -1,5 +1,4 @@
-use test2;
-
+use production_db;
 
 insert into Roles(RoleName) values('Administrator');
 insert into Roles(RoleName) values('Merchandiser');
@@ -33,17 +32,17 @@ insert into Products(ProductDescription,ProductName,ProductPrice) values('produc
 insert into Products(ProductDescription,ProductName,ProductPrice) values('productDescription4','productName4',4);
 insert into Products(ProductDescription,ProductName,ProductPrice) values('productDescription5','productName5',5);
 
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','ivanka','horoshko','iva','qwerty',1,4,1);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','myroslav','shram','myroslav','qwerty',2,3,1);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','marko','bekhta','marko','qwerty',3,2,1);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','vitalik','nobis','vitalik','qwerty',4,1,1);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','orest','vovchack','orest','qwerty',1,4,1);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','roman','nazarevuch','romanN','qwerty',2,3,1);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','roman','svustyn','romanS','qwerty',3,2,1);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','firstName1','lastName1','login1','qwerty',1,1,2);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','firstName2','lastName2','login2','qwerty',1,1,3);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','firstName3','lastName3','login3','qwerty',1,1,4);
-insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef) values(10,'mail','firstName4','lastName4','login4','qwerty',1,2,4);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','ivanka','horoshko','iva','qwerty',1,4,1,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','myroslav','shram','myroslav','qwerty',2,3,1,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','marko','bekhta','marko','qwerty',3,2,1,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','vitalik','nobis','vitalik','qwerty',4,1,1,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','orest','vovchack','orest','qwerty',1,4,1,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','roman','nazarevuch','romanN','qwerty',2,3,1,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','roman','svustyn','romanS','qwerty',3,2,1,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','firstName1','lastName1','login1','qwerty',1,1,2,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','firstName2','lastName2','login2','qwerty',1,1,3,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','firstName3','lastName3','login3','qwerty',1,1,4,1);
+insert into Users(Balance,Email,FirstName,LastName,Login,Password,CustomerTypeRef,RegionRef,RoleRef,IsUserActive) values(10,'mail','firstName4','lastName4','login4','qwerty',1,2,4,1);
 
 insert into Orders(DeliveryDate,OrderDate,TotalPrice,Assigne,Customer,OrderStatusRef,MaxDiscount,OrderName,OrderNumber) values(null,null,10,1,10,3,11,'OrderName1',1);
 insert into Orders(DeliveryDate,OrderDate,TotalPrice,Assigne,Customer,OrderStatusRef,MaxDiscount,OrderName,OrderNumber) values(null,null,10,3,11,3,12,'OrderName2',2);
